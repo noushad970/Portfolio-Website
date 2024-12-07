@@ -206,13 +206,13 @@ header {
     align-items: center;
     justify-content: space-between-2; /* Space between logo and skill name */
     background-color: #f1c40f;
-    color: #fff;
+    color: #000000;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
     width: 500px; /* Fixed width */
     height: 50px; /* Fixed height */
@@ -258,4 +258,26 @@ header {
 .popup-container.active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+}
+/* Social Media Container */
+.social-media {
+    position: fixed; /* Keeps the icons fixed on the screen */
+    right: 20px; /* Position 20px away from the right edge */
+    top: 200px; /* Start 100px from the top */
+    display: flex;
+    flex-direction: column; /* Arrange icons in a vertical line */
+    gap: 15px; /* Space between the icons */
+}
+
+/* Social Media Icons */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular icons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
 }
