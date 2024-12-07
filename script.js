@@ -41,12 +41,12 @@ class Particle {
         // Bounce particles off edges
         if (this.x < 0 || this.x > canvas.width) this.velocityX *= -1;
         if (this.y < 0 || this.y > canvas.height) this.velocityY *= -1;
-
+     
         // Move slightly towards the mouse
         const dx = mouse.x - this.x;
         const dy = mouse.y - this.y;
-        this.x += dx * 0.0002;
-        this.y += dy * 0.0002;
+        this.x += dx * 0.0005;
+        this.y += dy * 0.0005;
 
         this.draw();
     }
@@ -58,7 +58,7 @@ function initParticles() {
     for (let i = 0; i < particleCount; i++) {
         const x = Math.random() * canvas.width;
         const y = Math.random() * canvas.height;
-        const radius = Math.random() * 2 + 1;
+        const radius = Math.random() * 5 + 1;
         const color = `rgba(255, ${Math.random() * 255}, ${Math.random() * 255}, 0.8)`;
         particles.push(new Particle(x, y, radius, color));
     }
@@ -87,3 +87,21 @@ window.addEventListener("resize", () => {
 // Initialize and animate
 initParticles();
 animateParticles();
+// Select all skill items and the popup container
+const skillItems = document.querySelectorAll('.skills-list li');
+const popupContainer = document.getElementById('popupContainer');
+const popupImage = document.getElementById('popupImage');
+
+// Add mouseover and mouseout event listeners
+skillItems.forEach(skill => {
+    skill.addEventListener('mouseover', () => {
+        const gifSrc = skill.getAttribute('data-gif');
+        popupImage.src = gifSrc;
+        popupContainer.classList.add('active');
+    });
+
+    skill.addEventListener('mouseout', () => {
+        popupContainer.classList.remove('active');
+        popupImage.src = ''; // Clear the GIF source
+    });
+});

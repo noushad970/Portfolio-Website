@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <canvas id="backgroundCanvas"></canvas>
+        
         <div class="logo">
             <div class="profile-container">
                 <img src="./images/default-image.png" alt="Profile Picture" class="profile-picture" id="profilePicture">
@@ -29,7 +29,57 @@
             </ul>
         </nav>
     </header>
-
+    <main class="main-section">
+        <div class="content-containerMain">
+            <!-- Left Side: Picture -->
+            <div class="left-side">
+                <img src="./images/my-photo.jpg" alt="Profile Picture" class="profile-pictureMain">
+            </div>
+        
+            <!-- Right Side: About Me and Skills -->
+            <div class="right-side">
+                <h2 style="color:white">About Me</h2>
+                <p style="color:white">Hello! I'm <strong>Noushad</strong>, a passionate Game and App developer with a knack for crafting beautiful and functional App or Game. <br>I specialize in front-end and back-end development and core knowledge in efficient coding.</p>
+                
+                <h3 style="color:white"><br>Skills:</h3>
+                <div class="skills-container">
+                <ul class="skills-list">
+                    <li data-gif="./images/coding.gif">
+                        <img src="./images/c++.gif" alt="CPP Logo" class="skill-logo">
+                        C++
+                    </li>
+                    <li data-gif="./images/API.gif">
+                        <img src="./images/csLogo.gif" alt="CS Logo" class="skill-logo">
+                        C#
+                    </li>
+                    <li data-gif="./images/Fullstack.gif">
+                        <img src="./images/jslogo.webp" alt="JavaScript Logo" class="skill-logo">
+                        JavaScript
+                    </li>
+                    <li data-gif="./images/nodejs anim.gif">
+                        <img src="./images/nodejs.png" alt="nodejs Logo" class="skill-logo">
+                        Node JS
+                    </li>
+                    <li data-gif="./images/game.gif">
+                        <img src="./images/unity.gif" alt="Unity Logo" class="skill-logo">
+                        Unity
+                    </li>
+                    <li data-gif="./images/Java-animation.gif">
+                        <img src="./images/java-logo.gif" alt="JAVA Logo" class="skill-logo">
+                        Java
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+                <!-- Popup GIF Container -->
+                <div class="popup-container" id="popupContainer">
+                    <img src="" alt="Skill Animation" id="popupImage" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <canvas id="backgroundCanvas"></canvas>
     <script src="script.js">
         
     </script>
