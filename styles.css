@@ -281,3 +281,53 @@ header {
 .social-icon:hover {
     transform: scale(1.2); /* Slight zoom effect on hover */
 }
+/* About Page Container */
+.about-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Education Section */
+.education-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Education Image */
+.edu-image {
+    width: 450px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Education Details */
+.edu-details {
+    flex-grow: 1;
+}
+
+.edu-details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.edu-details a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.edu-details a:hover {
+    color: #ffffff;
+}
+
+.edu-details p {
+    margin: 10px 0;
+}

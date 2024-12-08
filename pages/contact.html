@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("rl_-Q0FjZQGr2XzyV"); // Replace with your Email.js User ID
+        })();
+    </script>
 </head>
 <body>
+    <canvas id="backgroundCanvas"></canvas>
     <header>
-        <canvas id="backgroundCanvas"></canvas>
         <div class="logo">
             <div class="profile-container">
                 <img src="../images/default-image.png" alt="Profile Picture" class="profile-picture" id="profilePicture">
@@ -31,9 +38,33 @@
     <script src="../script.js">
         
     </script>
-    <main>
-        <h2>Welcome to Contact page</h2>
-        <p>This is the content for the Project page. Customize it as needed.</p>
-    </main>
+    
+
+    <div class="contact-container">
+        <h1 class="contact-header">Contact Me</h1>
+        <p class="contact-subtext">Feel free to reach out! I'll get back to you as soon as possible.</p>
+
+        <!-- Form Section -->
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" id="nameInput" required>
+            <input type="email" name="email" placeholder="Your Email" id="emailInput" required>
+            <textarea name="message" placeholder="Your Message" id="messageInput" required></textarea>
+            <button type="button" id="sendButton">Send</button>
+        </form>
+        <!-- Button to Open Gmail Compose -->
+<div class="compose-button-container">
+    <button id="composeMailButton">Compose Mail</button>
+</div>
+
+        <!-- Feedback Section -->
+        <div class="feedback-section">
+            <h2>Visitor Feedback</h2>
+            <div id="feedbackList"></div>
+        </div>
+    </div>
+    <script src="../scripts/contact.js"></script> <!-- Adjust path as per folder structure -->
+</body>
+    
 </body>
 </html>
+<!-- service_2ey9ptc -->
