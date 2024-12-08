@@ -24,6 +24,7 @@ body {
     color: #2c3e50; /* Default text color */
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     justify-content: flex-start;
 }
 
@@ -330,4 +331,41 @@ header {
 
 .edu-details p {
     margin: 10px 0;
+}
+.profile-section1 {
+    text-align: center;
+    padding: 30px;
+    background: #e8f1ff;
+    margin: 30px auto;
+    border-radius: 1px;
+    animation: fadeInUp 1.5s ease;
+}
+.profile-links {
+    margin-top: 15px;
+}
+
+.profile-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.fiverr {
+    background: #1dbf73;
+}
+
+.fiverr:hover {
+    background: #17a566;
+}
+
+.upwork {
+    background: #6fda44;
+}
+
+.upwork:hover {
+    background: #5fb638;
 }

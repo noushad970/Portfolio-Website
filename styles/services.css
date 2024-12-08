@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    line-height: 1.6;
+    /* background-color: #f4f4f9; */
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.service-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #00fff7;
+}
+
+.service-header {
+    position: relative;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+
+/* Animation */
+.profile-section {
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    margin: 30px auto;
+    border-radius: 8px;
+    animation: fadeInUp 1.5s ease;
+}
+.profile-links {
+    margin-top: 15px;
+}
+
+.profile-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.fiverr {
+    background: #1dbf73;
+}
+
+.fiverr:hover {
+    background: #17a566;
+}
+
+.upwork {
+    background: #6fda44;
+}
+
+.upwork:hover {
+    background: #5fb638;
+}

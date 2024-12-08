@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service page</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/services.css">
 </head>
 <body>
-    
+    <canvas id="backgroundCanvas"></canvas>
     <header>
-        <canvas id="backgroundCanvas"></canvas>
         <div class="logo">
             <div class="profile-container">
                 <img src="../images/default-image.png" alt="Profile Picture" class="profile-picture" id="profilePicture">
@@ -34,8 +34,48 @@
     </script>
     
     <main>
-        <h2>Welcome to Service Page</h2>
-        <p>This is the content for the Service page. Customize it as needed.</p>
+        <section class="service-section">
+            <div class="content">
+                <h2 class="service-header">Unity Game Development</h2>
+                <p>I provide complete Unity game development services including:</p>
+                <ul>
+                    <li>Front-end design</li>
+                    <li>Back-end game mechanics</li>
+                    <li>Ads integration</li>
+                    <li>Cloud save</li>
+                    <li>Authentication</li>
+                    <li>In-app purchases (IAP)</li>
+                    <li>Multiplayer mode</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="content">
+                <h2 class="service-header">Full Stack Web Development</h2>
+                <p>I offer full-stack web development services including:</p>
+                <ul>
+                    <li>CSS, HTML, and JavaScript</li>
+                    <li>Database connection</li>
+                    <li>Node.js</li>
+                    <li>Front-end and back-end integration</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Fiverr and Upwork Section -->
+        <section class="profile-section">
+            <h2 style="color:rgb(0, 0, 0)">Hire Me on Freelance Platforms</h2>
+            <p style="color:rgb(0, 0, 0)">Check out my Fiverr and Upwork profiles to hire me for your projects:</p>
+            <div class="profile-links">
+                <a href="https://www.fiverr.com/noushad_97" target="_blank" class="profile-link fiverr">Fiverr Profile</a>
+                <a href="https://www.upwork.com/freelancers/~0193bcc1ac56d08c40" target="_blank" class="profile-link upwork">Upwork Profile</a>
+            </div>
+            
+        </section>
+        
     </main>
+
+    <script src="../scripts/services.js"></script>
 </body>
 </html>
