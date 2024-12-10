@@ -6,12 +6,17 @@
     <title>Contact page</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../styles/contact.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("rl_-Q0FjZQGr2XzyV"); // Replace with your Email.js User ID
-        })();
-    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "rl_-Q0FjZQGr2XzyV",
+      });
+   })();
+</script>
+
 </head>
 <body>
     <canvas id="backgroundCanvas"></canvas>
@@ -56,18 +61,13 @@
     <button id="composeMailButton">Compose Mail</button>
 </div>
 
-        <!-- Feedback Section -->
-        <div class="feedback-section">
-            <h2>Visitor Feedback</h2>
-            <div id="feedbackList"></div>
-        </div>
-    </div>
+        
     <script src="../scripts/contact.js"></script> <!-- Adjust path as per folder structure -->
     <section class="profile-section1">
         <h2 style="color:rgb(0, 0, 0)">Hire Me on Freelance Platforms</h2>
-        <p style="color:rgb(0, 0, 0)">Check out my Fiverr and Upwork profiles to hire me for your projects:</p>
+        <p style="color:rgb(0, 0, 0)">Check out my PeoplePerHour and Upwork profiles to hire me for your projects:</p>
         <div class="profile-links">
-            <a href="https://www.fiverr.com/noushad_97" target="_blank" class="profile-link fiverr">Fiverr Profile</a>
+            <a href="https://www.peopleperhour.com/freelancer/technology-programming/md_noushad-bhuiyan-game-and-app-developer-zzvnzvnj" target="_blank" class="profile-link fiverr">PeoplePerHour Profile</a>
             <a href="https://www.upwork.com/freelancers/~0193bcc1ac56d08c40" target="_blank" class="profile-link upwork">Upwork Profile</a>
         </div>
         

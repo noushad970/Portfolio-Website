@@ -105,3 +105,12 @@ skillItems.forEach(skill => {
         popupImage.src = ''; // Clear the GIF source
     });
 });
+function playVideo(container) {
+    const iframe = container.querySelector('iframe');
+    const videoUrl = container.getAttribute('data-video');
+
+    if (!container.classList.contains('playing')) {
+        iframe.src = `${videoUrl}?autoplay=1&rel=0`; // Append autoplay parameter
+        container.classList.add('playing');
+    }
+}
