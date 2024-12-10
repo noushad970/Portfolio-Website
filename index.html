@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "rl_-Q0FjZQGr2XzyV",
+      });
+   })();
+</script>
 </head>
 <body>
     <header>
@@ -139,7 +150,29 @@
                 </ul>
             </div>
         </section>
+        <script src="../script.js">
+        
+    </script>
+    
 
+    <div class="contact-container">
+        <h1 class="contact-header">Contact Me</h1>
+        <p class="contact-subtext">Feel free to reach out! I'll get back to you as soon as possible.</p>
+
+        <!-- Form Section -->
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" id="nameInput" required>
+            <input type="email" name="email" placeholder="Your Email" id="emailInput" required>
+            <textarea name="message" placeholder="Your Message" id="messageInput" required></textarea>
+            <button type="button" id="sendButton">Send</button>
+        </form>
+        <!-- Button to Open Gmail Compose -->
+<div class="compose-button-container">
+    <button id="composeMailButton">Compose Mail</button>
+</div>
+
+        
+    <script src="./scripts/contact.js"></script>
         <!-- Fiverr and Upwork Section -->
         <section class="profile-section">
             <h2 style="color:rgb(0, 0, 0)">Hire Me on Freelance Platforms</h2>
@@ -154,7 +187,6 @@
         
     </main>
     
-    <canvas id="backgroundCanvas"></canvas>
     <script src="script.js">
         
     </script>
